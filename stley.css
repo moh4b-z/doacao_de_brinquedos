@@ -12,3 +12,32 @@ a {
 ul, ol, li{
     list-style: none;
 }
+
+header{
+    height: 100px;
+    width: 100%;
+}
+
+.chavepix {
+    position: relative;
+    cursor: pointer;
+}
+
+.copiado {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.9em;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.copiado.mostrar {
+    opacity: 1;
+}

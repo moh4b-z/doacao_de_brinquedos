@@ -4,35 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stley.css">
+    <link rel="stylesheet" href="./responsivo.css">
     <title>Doação Briquedos</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="logo">
+            <img src="./IMG/SENAI_São_Paulo_logo.png" alt="">
+        </div>
+    </header>
     <main>
 
         <div class="chavepix">
-            <span>Clique para copiar a chave PIX</span>
-            <img src="" alt="" class="qrcode">
-            <div class="copiado">Chave PIX copiada!</div>
+            <span>QRcode para o PIX</span>
+            <img src="./IMG/qrcode.jfif" alt="" class="qrcode">
         </div>
+
         <ol class="entregas">
             <li class="diaEntrega">
                 <span>Entrega do dia 15/11</span>
-                <video controls>
+                <video controls class="video-player">
                     <source type="video/mp4">
                 </video>
+                <div class="mensagem">Ainda não ocorreu o dia da entrega.</div>
             </li>
             <li class="diaEntrega">
-                <span>Entrega do dia 15/22</span>
-                <video controls>
+                <span>Entrega do dia 22/11</span>
+                <video controls class="video-player">
                     <source type="video/mp4">
                 </video>
+                <div class="mensagem">Ainda não ocorreu o dia da entrega.</div>
             </li>
             <li class="diaEntrega">
-                <span>Entrega do dia 15/29</span>
-                <video controls>
+                <span>Entrega do dia 29/11</span>
+                <video controls class="video-player">
                     <source type="video/mp4">
                 </video>
+                <div class="mensagem">Ainda não ocorreu o dia da entrega.</div>
             </li>
         </ol>
     </main>

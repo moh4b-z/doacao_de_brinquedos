@@ -13,31 +13,101 @@ ul, ol, li{
     list-style: none;
 }
 
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url(./IMG/CasaH-Papel-de-Parede-Infantil-CrianC3A7as-e-Brinquedos-4510-489419-1-zoom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 header{
     height: 100px;
     width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 200px;
+}
+.logo img{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 150px);
+    padding: 10px;
 }
 
 .chavepix {
-    position: relative;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8ecce9bd;
+    padding: 8px;
+    height: 250px;
+    border-radius: 10px;
 }
 
-.copiado {
-    position: absolute;
-    top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 0.9em;
-    opacity: 0;
-    transition: opacity 0.3s;
-    pointer-events: none;
+
+.qrcode{
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
 }
 
-.copiado.mostrar {
-    opacity: 1;
+
+
+.entregas{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    gap: 10px;
+}
+.diaEntrega{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    padding: 8px;
+    padding-top: 18px;
+    max-height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #f7dab2bb;
+    transition: max-height 0.3s ease-in; 
+    overflow: hidden;
+}
+
+
+.diaEntrega:hover{
+    max-height: 500px;
+    transition: max-height 1s ease-out;
+}
+
+.diaEntrega .video-player {
+    display: none; /* Oculta o vídeo por padrão */
+}
+
+.diaEntrega .mensagem {
+    display: none; /* Oculta a mensagem por padrão */
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    padding: 10px;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
 }

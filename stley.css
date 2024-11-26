@@ -18,16 +18,48 @@ body{
     width: 100vw;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-image: url(./IMG/CasaH-Papel-de-Parede-Infantil-CrianC3A7as-e-Brinquedos-4510-489419-1-zoom.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
+    background-color: #dcf1f5;
+    font-size: 0.9rem;
+}
+
+.bolas{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #106b7a;
+}
+#blue{
+    left: calc(100vw - 200px);
+    top: -200px;
+    background-color: #a2cad0;
+}
+
+#red{
+    width: 25vw;
+    height: 25vw;
+    left: -140px;
+    top: -150px;
+    background-color: #c19981;
+}
+#red div{
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    background-color: #dcf1f5;
 }
 
 header{
     height: 100px;
     width: 100%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -39,75 +71,88 @@ header{
     width: 100%;
 }
 
-main{
-    display: flex;
-    width: 100%;
-    height: calc(100vh - 150px);
-    padding: 10px;
+h1{
+    color: #106b7a;
+    text-align: center;
 }
 
-.chavepix {
+h2{
+    color: #00BAD8;
+    font-size: 1.1rem;
+}
+p{
+    font-size: 0.9rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
+    width: 100%;
+    height: calc(100vh - 100px);
+    padding: 10px;
+    color: black;
+    padding-bottom: 10vh;
+}
+
+section{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #8ecce9bd;
-    padding: 8px;
-    height: 250px;
-    border-radius: 10px;
+    justify-content: center;
 }
 
+.text1 p{
+    width: 150%;
+}
 
+.text3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text3 h3, .text3 span{
+    background-color: #f8f7da;
+    padding: 5px;
+    border-radius: 50px;
+}
 .qrcode{
     height: 200px;
     width: 200px;
-    background-color: transparent;
+    border-radius: 0;
+    border: 5px solid #f8f7da;
 }
 
-
-
-.entregas{
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    width: 350px;
-    height: 350px;
-    overflow: hidden;
-    gap: 10px;
-}
-.diaEntrega{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 18px;
-    padding: 8px;
-    padding-top: 18px;
-    max-height: 50px;
-    width: 100%;
-    border-radius: 8px;
-    background-color: #f7dab2bb;
-    transition: max-height 0.3s ease-in; 
-    overflow: hidden;
+.img{
+    position: absolute;
+    bottom: -3vw;
+    right: -3vw;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
 }
 
+.nuvem{
+    position: absolute;
+    z-index: 1;
+    width: 15vw;
+    bottom: 5vh;
+    left: 4vw;
 
-.diaEntrega:hover{
-    max-height: 500px;
-    transition: max-height 1s ease-out;
 }
 
-.diaEntrega .video-player {
-    display: none; /* Oculta o vídeo por padrão */
-}
-
-.diaEntrega .mensagem {
-    display: none; /* Oculta a mensagem por padrão */
-    font-size: 16px;
-    color: #666;
-    text-align: center;
-    padding: 10px;
-}
-
-footer{
-    height: 50px;
-    width: 100%;
+@media (max-width: 735px){
+    main{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4vh;
+    }
+    .text1 p{
+        width: 100%;
+    }
+    .nuvem{
+        width: 35vw;
+    }
 }

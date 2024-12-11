@@ -20,7 +20,7 @@ body{
     overflow-y: hidden;
     position: relative;
     background-color: #dcf1f5;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .bolas{
@@ -78,10 +78,10 @@ h1{
 
 h2{
     color: #00BAD8;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 }
 p{
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 main{
@@ -128,8 +128,8 @@ section{
 
 .img{
     position: absolute;
-    bottom: -10vw;
-    right: -10vw;
+    bottom: -12vw;
+    right: -12vw;
     height: 40vw;
     width: 40vw;
     border-radius: 50%;

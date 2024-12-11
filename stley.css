@@ -35,8 +35,8 @@ body{
     color: #106b7a;
 }
 #blue{
-    left: calc(100vw - 200px);
-    top: -200px;
+    left: calc(100vw - 15vw);
+    top: -15vw;
     background-color: #a2cad0;
 }
 
@@ -102,10 +102,18 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
 .text1 p{
     width: 150%;
+}
+
+.text23{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .text3{
@@ -128,10 +136,10 @@ section{
 
 .img{
     position: absolute;
-    bottom: -12vw;
-    right: -12vw;
-    height: 40vw;
-    width: 40vw;
+    bottom: -8vw;
+    right: -8vw;
+    height: 30vw;
+    width: 30vw;
     border-radius: 50%;
 }
 
